@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" name="" id="display" readonly>
+        <div id="keys">
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="Display('7')">7</button>
+            <button onclick="Display('8')">8</button>
+            <button onclick="Display('9')">9</button>
+            <button onclick="Display('+')" class="operator-btn">+</button>
+            <button onclick="Display('4')">4</button>
+            <button onclick="Display('5')">5</button>
+            <button onclick="Display('6')">6</button>
+            <button onclick="Display('-')" class="operator-btn">-</button>
+            <button onclick="Display('1')">1</button>
+            <button onclick="Display('2')">2</button>
+            <button onclick="Display('3')">3</button>
+            <button onclick="Display('*')" class="operator-btn">*</button>
+            <button onclick="Display('0')">0</button>
+            <button onclick="Display('.')">.</button>
+            <button onclick="calculate()" class="result">=</button>
+            <button onclick="Display('/')" class="operator-btn">/</button>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>Atul Adhikari &copy; 2024 All Rights Reserved</footer>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
