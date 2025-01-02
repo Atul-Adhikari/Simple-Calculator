@@ -15,7 +15,6 @@ body {
   margin-top: 70px;
 }
 
-
 #display {
   padding: 20px;
   font-size: 5rem;
@@ -73,5 +72,5 @@ button:active {
   margin: 5px;
   text-align: center;
   color: black;
-  font-weight: bold;
+  font-weight: bolder;
 }
