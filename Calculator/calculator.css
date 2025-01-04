@@ -54,6 +54,11 @@ button {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: rgba(113, 115, 119, 0.5);
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
 .equalBtn {
   background-color: #fb7c14;
 }
