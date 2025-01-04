@@ -1,5 +1,5 @@
 let input = document.getElementById("inputBox");
-let buttons = document.querySelectorAll("button");
+let buttons = document.querySelectorAll(".button");
 
 let string = "";
 let arr = Array.from(buttons);
@@ -24,7 +24,7 @@ arr.forEach((button) => {
 fetch("https://api.api-ninjas.com/v1/quotes", {
   method: "GET",
   headers: {
-    "X-Api-Key": "D84748MWXYKDqP993XFlkw==8BsLptqRntscY14U",
+    "X-Api-Key": `${API_KEY}`,
     "Content-Type": "application/json",
   },
 })
@@ -35,7 +35,13 @@ fetch("https://api.api-ninjas.com/v1/quotes", {
     return response.json();
   })
   .then((data) => {
-    console.log(data); // Handle the API response here
+    console.log(data); // Log the API response
+
+    // Update the quotes element with the fetched quote
+    const quotes = document.getElementById("quote");
+    const author = document.getElementById("author");
+    quotes.innerHTML = data[0].quote;
+    author.innerHTML = "-" + data[0].author;
   })
   .catch((error) => {
     console.error("Error: ", error.message); // Handle errors
